@@ -254,17 +254,17 @@ section.studies .study .study-year {
 }
 
 #project-2 {
-  background: url("./images/Asterisms\ Artworks_ALL.jpg") no-repeat 50% 50%;
+  background: url("./images/02.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
 #project-3 {
-  background: url("./images/12.jpg") no-repeat 50% 50%;
+  background: url("./images/03.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
 #project-4 {
-  background: url("./images/Asterisms\ Artworks_ALL.jpg") no-repeat 50% 50%;
+  background: url("./images/04.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -279,22 +279,12 @@ section.studies .study .study-year {
 }
 
 #project-7 {
-  background: url("./images/13.jpg") no-repeat 50% 50%;
+  background: url("./images/07.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
 #project-8 {
-  background: url("./images/15.jpg") no-repeat 50% 50%;
-  background-size: cover;
-}
-
-#project-9 {
-  background: url("./images/17.jpg") no-repeat 50% 50%;
-  background-size: cover;
-}
-
-#project-10 {
-  background: url("./images/.jpg") no-repeat 50% 50%;
+  background: url("./images/08.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
