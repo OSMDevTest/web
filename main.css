@@ -208,52 +208,56 @@ section.studies .study .study-year {
 }
 
 #project-1 {
-  background: url("images\icons\1.jpg") no-repeat 50% 50%;
-  background-size: auto;
+  background: url("images/icons/1.jpg") no-repeat 50% 50%;
+  background-size: cover;
 }
 
 #project-2 {
-  background: url("images\icons\2.jpg") no-repeat 50% 50%;
-  background-size:auto;
+  background: url("images/icons/2.jpg") no-repeat 50% 50%;
+  background-size:cover;
 }
 
 #project-3 {
-  background: url("./images/12.jpg") no-repeat 50% 50%;
+  background: url("images/icons/3.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
 #project-4 {
-  background: url("./images/Asterisms\ Artworks_ALL.jpg") no-repeat 50% 50%;
+  background: url("images/icons/4.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
 #project-5 {
-  background: url("./images/05.jpg") no-repeat 50% 50%;
+  background: url("images/icons/5.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
 #project-6 {
-  background: url("./images/06.jpg") no-repeat 50% 50%;
+  background: url("images/icons/6.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
 #project-7 {
-  background: url("./images/13.jpg") no-repeat 50% 50%;
+  background: url("images/icons/7.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
 #project-8 {
-  background: url("./images/15.jpg") no-repeat 50% 50%;
+  background: url("images/icons/8.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
 #project-9 {
-  background: url("./images/17.jpg") no-repeat 50% 50%;
+  background: url("images/icons/9.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
 #project-10 {
-  background: url("./images/.jpg") no-repeat 50% 50%;
+  background: url("images/icons/10.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+#project-11 {
+  background: url("images/icons/11.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
