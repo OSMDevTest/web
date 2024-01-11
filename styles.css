@@ -101,25 +101,6 @@ a:visited {
   background-repeat: no-repeat; 
 } 
 
-@media (max-width: 1393px) {
-  .product-hero p {
-    width: 100%;
-    font-size: 20px;
-  }
-
-  .product-title h1 {
-    font-size: 40px;
-    padding: 0;
-  }
-
-  .product-title {
-    font-size: 16px;
-  }
-
-  .product-look img {
-    width: 50vw;
-  }
-}
 
 /* overlay */
 .overlay {
@@ -204,19 +185,6 @@ a:visited {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
-  .product-name,
-  .product-img,
-  .product-variants,
-  .product-nav-links > button:nth-child(2) {
-    display: none;
-  }
-
-  .product-nav-links {
-    margin: 0;
-  }
-}
-
 /* product-description */
 
 .product-description {
@@ -243,6 +211,7 @@ a:visited {
 
 .link {
   margin: 2em 0;
+  cursor: pointer;
 }
 
 .link span::after {
@@ -273,9 +242,37 @@ a:visited {
   font-weight: 500;
 }
 
-@media (max-width: 900px) {
-  .front-view,
-  .side-view {
+
+/* MODAL POPUP */
+/* Default style, hide the modal */
+#minScreen {
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999;
+  display: none;
+}
+
+/* Show the modal on screens smaller than or equal to 768px (tablet and smaller) */
+@media (max-width: 1024px) {
+  #minScreen {
+    display: block;
+    background-color: orangered; /* Add a temporary style to test */
+  }
+  #casestudy {
     display: none;
   }
+}
+@media (min-width: 1024px) {
+  .product-title h1 {
+  font-weight: 400;
+  padding: 0.4em 0;
+  line-height: 0.9em;
+  font-size: 80px;
+}
+  .desc {
+    flex: 3;
+    padding: 2em;
+    overflow: auto;
+  }
+  
 }

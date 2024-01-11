@@ -23,8 +23,21 @@
   </head>
   <body>
     <div class="container">
+      <div id="minScreen">
+        <div class="m-content">
+          <div class="m-header">
+            <h3 class="m-title">Bigger screen required!</h5>
+          </div>
+          <div class="m-body">
+            <p class="lead">Hi! Thanks for visiting our website!<br /><br />
+              This project is intended as a visually driven experience, this means screens smaller than a laptop or big tablet won't work
+              very well, so we prevent access from these devices. Please come back on a laptop or desktop.
+            </p>
+          </div>
+        </div>
+    </div>
       <!-- nav -->
-      <div class="nav">
+      <div class="nav" id="casestudy">
         <div class="logo"> <a href="case-studies.html">OPEN SPACE MUSEUM - CASE STUDIES</a></div>
         <div class="back">
           <a href="greatWall.html"><ion-icon name="arrow-forward-sharp"></ion-icon></a>
@@ -32,7 +45,7 @@
       </div>
 
       <!-- hero -->
-      <div class="product-hero">
+      <div class="product-hero" id="casestudy">
         <div class="product-header">
           <p>
           </p>
@@ -49,10 +62,10 @@
       </div>
 
       <!-- overlay -->
-      <div class="overlay"></div>
+      <div class="overlay" id="casestudy"></div>
 
       <!-- product description -->
-      <div class="product-description">
+      <div class="product-description" id="casestudy">
         <div class="desc">
           <p>
             The space frame elements are used to create a long tunnel (5m/1m/1m) that is position at ground level.
@@ -67,28 +80,16 @@ Optional: To make the effect of traveling through the tunnel more varied when go
 
 A QR code is mounted on the first Space Frame on each of the sides of it so that it can be accessed by more than one person at a time. It opens up the case study app. 
           </p>
-          <div class="link"><span>Download Image</span></div>
+          <div class="link" onclick="downloadImage('images/spaceArt.png')"><span> Download Image</span></div>
         </div>
-        <div class="front-view view">
-          <div class="sketch-img"><img src="./spaceArtDetail2.png" alt="" /></div>
-          <br />
-          <div class="sketch-title">
-          </div>
-        </div>
-        <div class="side-view view">
-          <div class="sketch-title">
-            <span>Details</span> <br />
-          </div>
-          <br />
-          <div class="sketch-img"><img src="./spaceArtDetail1.png" alt="" /></div>
-        </div>
+
         <div class="close-desc" id="close">
           <ion-icon name="close-sharp"></ion-icon>
         </div>
       </div>
 
       <!-- footer -->
-      <div class="product-info">
+      <div class="product-info" id="casestudy">
         <div class="product-nav">
           <div class="product-img">
             <img src="images/spaceArt.png" alt="" />
@@ -96,9 +97,9 @@ A QR code is mounted on the first Space Frame on each of the sides of it so that
           <div class="product-name">Spaceart Tunnel<br /><span>case study element no.1</span></div>
           <div id="measurements" class="product-variants">technical description</div>
       </div>
-      <div class="footer-col">
-        <p>A N55 &copy; Idea</p>
-        <p>In the context of PERCEIVE &reg;</p>
+      <div class="footer-col" id="casestudy">
+        <p>A <a href="https://www.n55.dk/">N55</a> &copy; Idea</p>
+        <p>In the context of <a href="http://perceive-horizon.eu/ ">PERCEIVE</a> &reg;</p>
       </div>
     </div>
   </body>
@@ -190,4 +191,20 @@ A QR code is mounted on the first Space Frame on each of the sides of it so that
       $(".zoom").magnify(); 
   }); 
   </script> 
+
+  <!--download-->
+  <script>
+    function downloadImage(imageUrl, fileName) {
+      var downloadLink = document.createElement('a');
+      downloadLink.href = imageUrl;
+      downloadLink.download = fileName || 'downloaded_image.jpg';  // Use provided fileName or a default
+    
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+    }
+    </script>
+    
+    
 </html>
+
